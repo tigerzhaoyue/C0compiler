@@ -1,0 +1,22 @@
+const int s=1;
+const int b=250;
+const char c='h';
+int a;
+int intfunc(int aa,int bb,int cc){
+	const char pp='a';
+	int b,cc;
+	return;
+}
+void vfunc(int x, int y, int z){
+	const int vv=1000;
+	int va,vb;
+	return;
+
+}
+void main(){
+
+	const int mainco=500;
+	int maina;
+	char mainb;
+
+return;}

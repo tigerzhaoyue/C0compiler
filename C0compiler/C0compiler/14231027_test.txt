@@ -1,0 +1,97 @@
+const int NUMBER=2;
+const char cha = '*';
+int targetvar;					
+int ADD(int a,int b){						
+	return (+a+b);														
+}
+void guess(int a,int b){	
+	int guessnum;	
+	guessnum=(a+b)/2;
+	if(guessnum>targetvar){				
+		printf("\nToo large!Upper bound now is:",guessnum);
+		guess(a,guessnum);		
+		return;		
+	}
+	if(guessnum<targetvar){
+		printf("\nToo small!Lower bound now is:",guessnum);
+		guess(guessnum,b);
+		return;
+	}
+	if(guessnum==targetvar){
+		printf("\nCongrats!Correct number:",guessnum);
+		return;
+	}
+}
+int fib(int x){
+	if(x<=0){
+		printf("fib para error! return ERROR CODE = -1\t");
+		return (-1);
+	}
+	if(x==1)
+		return (1);
+	if(x==2)
+		return (1);
+	return ((fib(x-1)+fib(x-2)));
+}
+
+
+void call_me_in_state(int x){
+	printf("\ncall void in state successfully!",x);
+}
+int call_me_in__state(int y,int is_state){
+	if(is_state)
+		printf("\ncall int in state successfully!",y);
+	return (y+1);
+}
+void main(){	
+	const int SIX= 6;						
+	int option,i;						
+	int x,y;
+	int chaint;
+	int array[10];
+	char cha_;				
+	i=1;							
+	if(i<NUMBER){												
+			scanf(option,x,y);						
+            switch(option){						
+            	case 1:{targetvar=10;
+					switch(cha){
+						case 42: printf("\ncase * ascii");
+						case '*':if(+1>0) 
+										printf("\ncase *");
+						case 42: printf("\ncase * ascii");
+						case +43: printf("\ncase + ascii");
+						case '+': printf("\ncase +");
+						case 'a': printf("\ncase 4");
+						case 5: {printf("\ncase 5");}
+					}
+					guess(0,20);}		
+            	case 2:{targetvar=8;guess(0,20);}		
+            	case 3:{targetvar=11;guess(0,20);}
+            	case 4:{targetvar=16;guess(0,20);}
+            	default:printf("\nWrong option!");		
+            	}         	  						
+	}
+	printf("\n",ADD(x,y));	
+	printf("\n");
+	while(i<SIX){
+		chaint=cha+i;
+		cha_=cha+i;
+		printf("\t", cha_);
+		printf("\t",chaint);
+		printf("\t\t");
+		i=i+1;
+		}
+	printf("\nFib sum is :",fib(ADD(x,y)+1)+10);
+	printf("\nFib sum is :",fib(-ADD(x,y+x)+1)+1);
+	array[3*SIX+-5*2]=ADD(-1+x,y+1);
+	array[0] = array[8]++1;
+	printf("\nArray[8]:",array[+(SIX-2)*4/+2]);
+	printf("\nArray[0]:",array[10*9*8*0]);
+	printf("\nArray[0]+Array[8]=",ADD(array[0],array[8]));
+	;;;;;;;;;;
+	call_me_in__state(666,1);
+	call_me_in_state(call_me_in__state(666,0));
+	printf("\t", cha+1);
+	return;
+	}

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Lexer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Table.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Quater.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Error.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Lexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Symbol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Table.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="typeofsym.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Quater.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="14231027_test.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="testbeforemain.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="testtable.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="testprintstr.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Fib.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="testQcode.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="1.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="code.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C0高46行文法.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="14231016_test.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="2.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="quicksort.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="test3.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="c1.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="c2.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="gcd.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="w1.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="w2.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="w3.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="w4.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="w5.txt">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Error.txt">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="Instruction.txt">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="Asm.asm">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="Table.txt">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="c6.txt">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

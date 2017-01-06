@@ -1,0 +1,85 @@
+// 需输入三个整数 intV1, intV2[0], intV2[1] 和一个字符 charV1
+
+# in1
+
+intV1 = 0
+intV2 = {0, 0}
+charV1 = 'a'
+
+# out1
+iFunc1() = 1
+iFunc2() = 1
+iFunc3() = 1
+a // charV1
+iFunc4() = 0 // intV2[0]
+iFunc5() = 0
+iFunc6() = 2
+iFunc7() = -2
+iFunc8() = 1
+iFunc9() = -1
+iFunc10 = 0
+iFunc11 = 0
+vFunc1() called
+vFunc2() called
+param1 is 2
+intC2 is 2
+vFunc3() called
+param1 is 3
+param2 is c
+param1 + param2 is 102 // c 的 ASCII 码值为 99 TODO
+vFunc4() called
+charC3 is c
+charC4 is d
+intV4 is 4
+intV1 == 0
+intV1 <= 0
+intV1 >= 0
+intV1 becomes 1
+intV1 becomes 2
+intV1 becomes 3
+intV1 becomes 4
+intV1 becomes 5
+intV2[0] is 0
+intV2[0] is 0
+intV2[0] is 0
+0 // 0 与 0 的最大公约数
+
+-------------------------------------------
+
+# in2
+
+intV1 = 10
+intV2 = {12, 20}
+charV1 = '~'
+
+# out2
+iFunc1() = 1
+iFunc2() = 1
+iFunc3() = 1
+~ // charV1
+iFunc4() = 12 // intV2[0]
+iFunc5() = 0
+iFunc6() = 2
+iFunc7() = -2
+iFunc8() = 1
+iFunc9() = -1
+iFunc10 = 0
+iFunc11 = 0
+vFunc1() called
+vFunc2() called
+param1 is 2
+intC2 is 2
+vFunc3() called
+param1 is 3
+param2 is c
+param1 + param2 is 102 // c 的 ASCII 码值为 99 TODO
+vFunc4() called
+charC3 is c
+charC4 is d
+intV4 is 4
+intV1 != 0
+intV1 >  0
+intV1 >= 0
+intV1 is true
+intV2[0] is neither 0 nor 1
+4 // 12 与 20 的最大公约数

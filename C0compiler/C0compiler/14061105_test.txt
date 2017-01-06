@@ -1,0 +1,190 @@
+const int MAX_1 = 101;
+const int MAX_2 = 102;
+const int ZERO = 0;
+const int LOW_1 = -1;
+const char CHAR_A = 'A';
+const char CHAR_PLUS = '+';
+const char CHAR_1 = '1';
+char abc;
+char sss;
+int aaa;
+char f1()
+{
+	const int f1_a = 1;
+	const char f1_c = '1';
+	int f1_a0;
+	char f1_c0;
+	f1_a0 = 1;
+	f1_c0 = '1';
+	printf("f1 : ");
+	printf(f1_a);
+	printf(f1_c);
+	printf(f1_a0);
+	printf(f1_c0);
+	printf("\n");
+	return('1');
+}
+int f2(int a)
+{
+	if(a > 0)
+	return(2);
+	return(0);
+}
+int f3(int a, int b)
+{
+	if(a > 0)
+	if(b > 0)
+	return(3);
+	return(0);
+}
+void _f1(char a)
+{
+	printf("_f1 : ");
+	printf(a);
+	printf("\n");
+	return;
+}
+void _f2(char a , char b)
+{
+	printf("_f2 : ");
+	printf(a);
+	printf(",");
+	printf(b);
+	printf("\n");
+}
+void _f3(int a, char b)
+{
+	printf("_f3 : ");
+	printf(a);
+	printf(",");
+	printf(b);
+	printf("\n");
+	return;
+}
+void main()
+{
+	const int MAX_3 = 3;
+	const char CHAR_MULT = '*';
+	const char CHAR_UNDERLINE = '_';
+	int _aA1_int;
+	int __int;
+	int i;
+	int j;
+	char c;
+	char c0123456789;
+	int cc[100];
+	printf("please  input '1\n");
+	scanf(i);
+	j = 2;
+	printf("please input 'a'\n");
+	scanf(c);
+	printf("\nscanf : ");
+	printf(i);
+	printf(j);
+	printf(c);
+	printf("\nprintf : ",1);
+	printf("\n");
+	{{{{{;}}}}}
+	{{{{{}}}}}
+	if(1)
+	{
+		_aA1_int = --1*1+2*2-2/1;
+		__int =+ ((1+0)+1)*10+1;
+		printf("ident : ");
+		printf(_aA1_int);
+		printf(__int);
+		printf("\n");
+	}
+	i = 4;
+	c = '4';
+	while(i>0)
+	{
+		switch(i)
+		{
+			case 1:
+				printf(1);
+		}	
+		switch(c)
+		{
+			case '1':
+				printf(1);
+			case '2':
+				printf(2);
+			case '3':
+				printf(3);
+			case '4':
+				printf(4);
+		}
+		switch(i)
+		{
+			case 1:
+			{
+				printf(1); 
+				printf("\n");
+			}
+			case 2:
+			{
+				printf(2); 
+				printf("\n");
+			}
+			case 3:
+			{
+				printf(3); 
+				printf("\n");
+			}
+			default:
+			{
+				printf(4); 
+				printf("\n");
+			}
+		}
+			
+		i = i - 1;
+		c = c - 1;
+	}
+	i = 1;
+	if(i < 2)
+		printf(1);
+	if(i <= 1)
+		printf(1);
+	if(i > 0)
+		printf(1);
+	if(i >= 1)
+		printf(1);
+	if(i != 2)
+		printf(1);
+	if(i == 1)
+		printf(1);
+	printf("\nfunction return : \n");
+	printf(f1());
+	printf("\n");
+	printf(f2(1));
+	printf("\n");
+	printf(f3(1,1));
+	printf("end--\n");
+	_f1('1');
+	_f2('1', '1');
+	_f3(1, '1');
+	;
+	printf("\nstring : !@#$%&'()*+,-./012abcABC\n");
+	printf("Array test:\n");
+	i = 0;
+	j = 0;
+	while(i<100)
+	{
+		cc[i] = i + 1;
+		j = j  + 1;
+		if(j > 10)
+		{
+			j = 1;
+			printf("\n");
+		}
+		printf(cc[i]);
+		i = i + 1;	
+	}
+	printf("\nTest finish!\n");
+	return;
+}
+
+
+

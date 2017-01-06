@@ -1,0 +1,29 @@
+const int a = 10;
+const int b = 5;
+const char c='a';
+int intfunc(int a, int b, int c){
+return (a+b-c);}
+void voidfunc(char b,int x){
+	return;
+}
+void main(){
+	int x,y,z;
+	int c;
+	int ar[100];
+	ar[60-y]=a+3;
+	scanf(x,y,z);
+	printf("I am zy",a);
+	printf("hehe");
+	printf(a+intfunc(1+a,2*b,30));
+	voidfunc('p',x+ar[5*x]);
+	c=c+'b';	
+	if(101<2/x+100){
+		x=x+1;
+		y=y-1;
+	}
+	while(a[1]){
+		x=x+1;
+		y=y-1;
+	}
+	return;
+}

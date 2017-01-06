@@ -1,0 +1,81 @@
+const int a=1,y=-3;
+const char e='x';
+int q,r[5];
+char w;
+void func1(int x,char b,int yxa){
+	int r1;
+	scanf(a,b,c);
+	scanf(x);
+	return (b[1+-2*a]);
+	return (1);
+	return('c');
+	if(1)
+		return(p);
+	if(2==p*q+1)
+		return(q);
+	while(1<2*p*q+(62*(1+c)))
+		return;
+	printf(a);
+	printf("I am haha");
+	{printf(a);
+	printf("I am haha",2*p*q+-23*8*(a+b*2)+(62/(1-c)));
+
+	}
+}
+void func2(){
+	const int a=20;
+	int r;
+	scanf(a,b,c);
+}
+int inty(int a,
+int b,
+int c){
+	const int a=20;
+	int r;
+	scanf(a,b,c);
+}
+void main(){ 
+	const int int1=5;
+	int r;
+	scanf(a,b,c);
+	scanf(x);
+	return (b[1+-2*a]);
+	return (1);
+	return('c');
+	if(1)
+		return(p);
+	if(2==p*q+1)
+		return(q);
+	while(1<2*p*q+(62*(1+c)))
+		return;
+	printf(a);
+	printf("I am haha");
+	{printf(a);
+	printf("I am haha",2*p*q+-23*8*(a+b*2)+(62/(1-c)));
+	}
+	while(1<2){
+		scanf(a);
+		printf("shjshfkj",a);
+		return;
+	}
+	for(i=0;i<n;i++){
+		a=a+1;
+		b=b+2;
+	}
+	switch(1+2*3){
+		case +2:printf("haha");
+		case 2:scanf(a);
+		case 'a':{scanf(a);printf("haha");return(1+2);}
+		case 0:{
+			switch(2){
+				case 1:scanf(b);
+				case 3:return;
+				case 5:printf(a);
+				default:return(b);
+			}	
+		}
+		default:
+	}
+	a=a+1;
+	inty(a+1,2*p*q+-23*8*(a+b*2)+(62/(1-c)),6);
+	}

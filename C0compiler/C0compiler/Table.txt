@@ -1,0 +1,97 @@
+
+
+ Table0
+      name    object      type      addr      size      cnum     cchar       ref   paranum
+    NUMBER         0         2         0        -1         2         ^         0         0
+       cha         0         1         4        -1         0         *         0         0
+ targetvar         1         2         8        -1         0         ^         0         0
+       ADD         4         2        12        -1         0         ^         1         2
+     guess         3         3        16        -1         0         ^         2         2
+       fib         4         2        20        -1         0         ^         3         1
+call_me_in_state         3         3        24        -1         0         ^         4         1
+call_me_in__state         4         2        28        -1         0         ^         5         2
+      main         3         3        32        -1         0         ^         6         0
+
+
+ Table1
+      name    object      type      addr      size      cnum     cchar       ref   paranum
+         a         5         2         0        -1         0         ^         0         0
+         b         5         2         4        -1         0         ^         0         0
+       (0)         6         2         8        -1         0         ^         0         0
+
+
+ Table2
+      name    object      type      addr      size      cnum     cchar       ref   paranum
+         a         5         2         0        -1         0         ^         0         0
+         b         5         2         4        -1         0         ^         0         0
+  guessnum         1         2         8        -1         0         ^         0         0
+       (1)         6         2        12        -1         0         ^         0         0
+       (2)         6         2        16        -1         0         ^         0         0
+
+
+ Table3
+      name    object      type      addr      size      cnum     cchar       ref   paranum
+         x         5         2         0        -1         0         ^         0         0
+       (3)         6         2         4        -1         0         ^         0         0
+       (4)         6         2         8        -1         0         ^         0         0
+       (5)         6         2        12        -1         0         ^         0         0
+       (6)         6         2        16        -1         0         ^         0         0
+       (7)         6         2        20        -1         0         ^         0         0
+
+
+ Table4
+      name    object      type      addr      size      cnum     cchar       ref   paranum
+         x         5         2         0        -1         0         ^         0         0
+
+
+ Table5
+      name    object      type      addr      size      cnum     cchar       ref   paranum
+         y         5         2         0        -1         0         ^         0         0
+  is_state         5         2         4        -1         0         ^         0         0
+       (8)         6         2         8        -1         0         ^         0         0
+
+
+ Table6
+      name    object      type      addr      size      cnum     cchar       ref   paranum
+       SIX         0         2         0        -1         6         ^         0         0
+    option         1         2         4        -1         0         ^         0         0
+         i         1         2         8        -1         0         ^         0         0
+         x         1         2        12        -1         0         ^         0         0
+         y         1         2        16        -1         0         ^         0         0
+    chaint         1         2        20        -1         0         ^         0         0
+     array         2         2        24        10         0         ^         0         0
+      cha_         1         1        64        -1         0         ^         0         0
+       (9)         6         2        68        -1         0         ^         0         0
+      (10)         6         1        72        -1         0         ^         0         0
+      (11)         6         1        76        -1         0         ^         0         0
+      (12)         6         2        80        -1         0         ^         0         0
+      (13)         6         2        84        -1         0         ^         0         0
+      (14)         6         2        88        -1         0         ^         0         0
+      (15)         6         2        92        -1         0         ^         0         0
+      (16)         6         2        96        -1         0         ^         0         0
+      (17)         6         2       100        -1         0         ^         0         0
+      (18)         6         2       104        -1         0         ^         0         0
+      (19)         6         2       108        -1         0         ^         0         0
+      (20)         6         2       112        -1         0         ^         0         0
+      (21)         6         2       116        -1         0         ^         0         0
+      (22)         6         2       120        -1         0         ^         0         0
+      (23)         6         2       124        -1         0         ^         0         0
+      (24)         6         2       128        -1         0         ^         0         0
+      (25)         6         2       132        -1         0         ^         0         0
+      (26)         6         2       136        -1         0         ^         0         0
+      (27)         6         2       140        -1         0         ^         0         0
+      (28)         6         2       144        -1         0         ^         0         0
+      (29)         6         2       148        -1         0         ^         0         0
+      (30)         6         2       152        -1         0         ^         0         0
+      (31)         6         2       156        -1         0         ^         0         0
+      (32)         6         2       160        -1         0         ^         0         0
+      (33)         6         2       164        -1         0         ^         0         0
+      (34)         6         2       168        -1         0         ^         0         0
+      (35)         6         2       172        -1         0         ^         0         0
+      (36)         6         2       176        -1         0         ^         0         0
+      (37)         6         2       180        -1         0         ^         0         0
+      (38)         6         2       184        -1         0         ^         0         0
+      (39)         6         2       188        -1         0         ^         0         0
+      (40)         6         2       192        -1         0         ^         0         0
+      (41)         6         2       196        -1         0         ^         0         0
+      (42)         6         1       200        -1         0         ^         0         0

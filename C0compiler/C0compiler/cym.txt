@@ -1,0 +1,65 @@
+int fac(int n)             
+{
+	int temp;
+	temp=1;
+	if(n-3>=0)
+	  temp=fac(n-1)+fac(n-2); 
+	return (temp);  
+}
+char test_k(char c)
+{
+	char temp;
+	if(c=='c')              
+		temp='a';
+	else
+		temp='b';
+	return (temp);
+}
+int jiecheng(int n)   
+{                        
+	int i,j;                
+	j=1;
+	for(i=1;i<=n;i=i+1)       
+	{
+		j=j*i;
+	}
+	return (j);
+}
+void judge(int n)            
+{                            
+	if(n>0)                 
+		printf("zhe ge shu shi zheng shu !");
+	else
+		printf("zhe ge shu shi fu shu !");
+	return ;
+}
+int mul(int a,int b)
+{
+	return (a*b);
+}
+void main()                 
+{                          
+	const int a=1,b=2,c=3;   
+	int i,j,k,n,f1,f2;           
+	int a1[100];
+	char ch1,ch2,ch3;
+	scanf(n,ch1,k);          
+	i=0;
+	do                        
+	{
+		a1[i]=i;
+		i=i+1;
+	}
+	while(i<100)
+	f1=fac(n);               
+    f2=jiecheng(n);          
+    ch2=test_k(ch1);          
+    judge(k);              
+    printf(f1);
+    printf(f2);
+    printf(ch2);
+    printf("hello world!");  
+    printf(a+b)
+    printf(n,k);
+	return (0);             
+}

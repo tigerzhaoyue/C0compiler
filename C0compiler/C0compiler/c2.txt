@@ -1,0 +1,45 @@
+const int NUMBER=2;
+const char cha = '*';
+int targetvar;					
+int ADD(int a,int b){						
+	return (+a+b);														
+}
+int fib(int x){
+	if(x<=0){
+		printf("fib para error! return ERROR CODE = -1\t");
+		return (-1);
+	}
+	if(x==1)
+		return (1);
+	if(x==2)
+		return (1);
+	return ((fib(x-1)+fib(x-2)));
+}
+
+void main(){	
+	const int TEN = 10;						
+	int option,i;						
+	int x,y;
+	int chaint;
+	int array[10];
+	char cha_;				
+	i=1;							
+	printf("\n",ADD(x,y));	
+	printf("\n");
+	while(i<TEN){
+		chaint=cha+i;
+		cha_=cha+i;
+		printf("\t", cha_);
+		printf("\t",chaint);
+		printf("\t\t");
+		i=i+1;
+		}
+	printf("\nFib sum is :",fib(ADD(x,y)+1)+10);
+	printf("\nFib sum is :",fib(-ADD(x,y+x)
+	+1)
+	+1);
+	array[3*6-10]=ADD(x,y+1);
+	array[0] = array[8]+1;
+	printf("\nArray[0]:",array[10*9*8*0]);
+	return;
+	}

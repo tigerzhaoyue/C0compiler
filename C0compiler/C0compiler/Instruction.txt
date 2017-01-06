@@ -1,0 +1,257 @@
+
+LAB  Label_1
+ADD  (0),a,b
+RET  (0)
+
+LAB  Label_2
+ADD  (1),a,b
+DIV  (2),(1),2
+ASG  guessnum,(2)
+BLE  Label_3,guessnum,targetvar
+WRT  "\nToo large!Upper bound now is:"
+WRT  guessnum
+SAVE  
+PUSH  guess,a,1
+PUSH  guess,guessnum,2
+CALVF  guess
+RET  
+
+LAB  Label_3
+BGE  Label_4,guessnum,targetvar
+WRT  "\nToo small!Lower bound now is:"
+WRT  guessnum
+SAVE  
+PUSH  guess,guessnum,1
+PUSH  guess,b,2
+CALVF  guess
+RET  
+
+LAB  Label_4
+BNE  Label_5,guessnum,targetvar
+WRT  "\nCongrats!Correct number:"
+WRT  guessnum
+RET  
+
+LAB  Label_5
+RET  
+
+LAB  Label_6
+BGT  Label_7,x,0
+WRT  "fib para error! return ERROR CODE = -1\t"
+RET  -1
+
+LAB  Label_7
+BNE  Label_8,x,1
+RET  1
+
+LAB  Label_8
+BNE  Label_9,x,2
+RET  1
+
+LAB  Label_9
+SUB  (3),x,1
+SAVE  
+PUSH  fib,(3),1
+CALF  fib,(4)
+SUB  (5),x,2
+SAVE  
+PUSH  fib,(5),1
+CALF  fib,(6)
+ADD  (7),(4),(6)
+RET  (7)
+
+LAB  Label_10
+WRT  "\ncall void in state successfully!"
+WRT  x
+RET  
+
+LAB  Label_11
+BEQ  Label_12,is_state,0
+WRT  "\ncall int in state successfully!"
+WRT  y
+
+LAB  Label_12
+ADD  (8),y,1
+RET  (8)
+
+LAB  Main
+ASG  i,1
+BGE  Label_13,i,NUMBER
+RAD  option
+RAD  x
+RAD  y
+BNE  Label_15,option,1
+ASG  targetvar,10
+BNE  Label_17,cha,42
+WRT  "\ncase * ascii"
+JMP  Label_16
+
+LAB  Label_17
+BNE  Label_18,cha,42
+BLE  Label_19,1,0
+WRT  "\ncase *"
+
+LAB  Label_19
+JMP  Label_16
+
+LAB  Label_18
+BNE  Label_20,cha,42
+WRT  "\ncase * ascii"
+JMP  Label_16
+
+LAB  Label_20
+BNE  Label_21,cha,43
+WRT  "\ncase + ascii"
+JMP  Label_16
+
+LAB  Label_21
+BNE  Label_22,cha,43
+WRT  "\ncase +"
+JMP  Label_16
+
+LAB  Label_22
+BNE  Label_23,cha,97
+WRT  "\ncase 4"
+JMP  Label_16
+
+LAB  Label_23
+BNE  Label_24,cha,5
+WRT  "\ncase 5"
+JMP  Label_16
+
+LAB  Label_24
+
+LAB  Label_16
+SAVE  
+PUSH  guess,0,1
+PUSH  guess,20,2
+CALVF  guess
+JMP  Label_14
+
+LAB  Label_15
+BNE  Label_25,option,2
+ASG  targetvar,8
+SAVE  
+PUSH  guess,0,1
+PUSH  guess,20,2
+CALVF  guess
+JMP  Label_14
+
+LAB  Label_25
+BNE  Label_26,option,3
+ASG  targetvar,11
+SAVE  
+PUSH  guess,0,1
+PUSH  guess,20,2
+CALVF  guess
+JMP  Label_14
+
+LAB  Label_26
+BNE  Label_27,option,4
+ASG  targetvar,16
+SAVE  
+PUSH  guess,0,1
+PUSH  guess,20,2
+CALVF  guess
+JMP  Label_14
+
+LAB  Label_27
+WRT  "\nWrong option!"
+
+LAB  Label_14
+
+LAB  Label_13
+WRT  "\n"
+SAVE  
+PUSH  ADD,x,1
+PUSH  ADD,y,2
+CALF  ADD,(9)
+WRT  (9)
+WRT  "\n"
+
+LAB  Label_28
+BGE  Label_29,i,SIX
+ADD  (10),cha,i
+ASG  chaint,(10)
+ADD  (11),cha,i
+ASG  cha_,(11)
+WRT  "\t"
+WRTC  cha_
+WRT  "\t"
+WRT  chaint
+WRT  "\t\t"
+ADD  (12),i,1
+ASG  i,(12)
+JMP  Label_28
+
+LAB  Label_29
+WRT  "\nFib sum is :"
+SAVE  
+PUSH  ADD,x,1
+PUSH  ADD,y,2
+CALF  ADD,(13)
+ADD  (14),(13),1
+SAVE  
+PUSH  fib,(14),1
+CALF  fib,(15)
+ADD  (16),(15),10
+WRT  (16)
+WRT  "\nFib sum is :"
+ADD  (17),y,x
+SAVE  
+PUSH  ADD,x,1
+PUSH  ADD,(17),2
+CALF  ADD,(18)
+NEG  (19),(18)
+ADD  (20),(19),1
+SAVE  
+PUSH  fib,(20),1
+CALF  fib,(21)
+ADD  (22),(21),1
+WRT  (22)
+MUL  (23),3,SIX
+ADD  (24),(23),-10
+OFF  (25),array,(24)
+ADD  (26),-1,x
+ADD  (27),y,1
+SAVE  
+PUSH  ADD,(26),1
+PUSH  ADD,(27),2
+CALF  ADD,(28)
+ASG  (25),(28)
+OFF  (29),array,0
+SEL  (30),array,8
+ADD  (31),(30),1
+ASG  (29),(31)
+WRT  "\nArray[8]:"
+SUB  (32),SIX,2
+MUL  (33),(32),4
+DIV  (34),(33),2
+SEL  (35),array,(34)
+WRT  (35)
+WRT  "\nArray[0]:"
+SEL  (36),array,0
+WRT  (36)
+WRT  "\nArray[0]+Array[8]="
+SEL  (37),array,0
+SEL  (38),array,8
+SAVE  
+PUSH  ADD,(37),1
+PUSH  ADD,(38),2
+CALF  ADD,(39)
+WRT  (39)
+SAVE  
+PUSH  call_me_in__state,666,1
+PUSH  call_me_in__state,1,2
+CALF  call_me_in__state,(40)
+SAVE  
+PUSH  call_me_in__state,666,1
+PUSH  call_me_in__state,0,2
+CALF  call_me_in__state,(41)
+SAVE  
+PUSH  call_me_in_state,(41),1
+CALVF  call_me_in_state
+WRT  "\t"
+ADD  (42),cha,1
+WRTC  (42)
+RETM  

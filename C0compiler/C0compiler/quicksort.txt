@@ -1,0 +1,111 @@
+int list[10];
+
+void swap(int x,int y)
+{
+   int temp;
+   temp = list[x];
+   list[x] = list[y];
+   list[y] = temp;
+}
+
+
+int choose_pivot(int i,int j )
+{
+   return((i+j) /2);
+}
+
+void quicksort(int m,int n)
+{
+   int key,i,j,k;
+   int flag;
+
+   if( m < n)
+   {
+      k = choose_pivot(m,n);
+      swap(m,k);
+      key = list[m];
+      i = m+1;
+      j = n;
+      while(i <= j)
+      {
+        flag = 1;
+         while(flag)
+         {
+              flag = 0;
+              if(i <= n)
+              {
+                if(list[i] <= key)
+                {
+                    i = i + 1;
+                    flag = 1;
+                 }
+               }
+         }
+         flag = 1;
+         while(flag)
+         {
+              flag = 0;
+              if(j >= m)
+              {
+                if(list[j] > key)
+                {
+                  j = j -1;
+                  flag = 1;
+                }
+              }    
+         }
+         
+         
+         if( i < j)
+                swap(i,j);
+      }
+     
+      swap(m,j);
+    
+      quicksort(m,j-1);
+      quicksort(j+1,n);
+   }
+}
+
+void printlist(int n)
+{
+   int i;
+   i = 0;
+   while(i<n)
+   {
+      printf(" ",list[i]);
+      i = i + 1;
+   }
+      
+}
+
+void main()
+{
+   const int MAX_ELEMENTS = 10;
+  
+
+   int i;
+   i = 0;
+   list[0] = 123;
+   list[1] = 2345;
+   list[2] = 3;
+   list[3] = 634;
+   list[4] = 534;
+   list[5] = 354;
+   list[6] = 945;
+   list[7] = -3;
+   list[8] = 0;
+   list[9] = 1;
+
+   
+   
+   printf("before:");
+   printlist(MAX_ELEMENTS);
+   
+
+   quicksort(0,MAX_ELEMENTS-1);
+
+   
+   printf("after:");
+   printlist(MAX_ELEMENTS);
+}

@@ -1,0 +1,57 @@
+const int NUMBER=2;
+const char cha = '*';
+int targetvar;					
+int ADD(int a,int b){						
+	return (+a+b);														
+}
+void guess(int a,int b){	
+	int guessnum;	
+	guessnum=(a+b)/2;
+	if(guessnum>targetvar){				
+		printf("\nToo large!Upper bound now is:",guessnum);
+		guess(a,guessnum);		
+		return;		
+	}
+	if(guessnum<targetvar){
+		printf("\nToo small!Lower bound now is:",guessnum);
+		guess(guessnum,b);
+		return;
+	}
+	if(guessnum==targetvar){
+		printf("\nCongrats!Correct number:",guessnum);
+		return;
+	}
+}
+void main(){	
+	const int TEN = 10;						
+	int option,i;						
+	int x,y;
+	int chaint;
+	int array[10];
+	char cha_;				
+	i=1;							
+	if(i<NUMBER){												
+			scanf(option,x,y);						
+            switch(option){						
+            	case 1:{targetvar=10;guess(0,20);}		
+            	case 2:{targetvar=8;guess(0,20);}		
+            	case 3:{targetvar=11;guess(0,20);}
+            	case 4:{targetvar=16;guess(0,20);}
+            	default:printf("\nWrong option!");		
+            	}         	  						
+	}
+	printf("\n",ADD(x,y));	
+	printf("\n");
+	while(i<TEN){
+		chaint=cha+i;
+		cha_=cha+i;
+		printf("\t", cha_);
+		printf("\t",chaint);
+		printf("\t\t");
+		i=i+1;
+		}
+	array[3*6-10]=ADD(x,y+1);
+	array[0] = array[8]+1;
+	printf("\nArray[0]:",array[10*9*8*0]);
+	return;
+	}

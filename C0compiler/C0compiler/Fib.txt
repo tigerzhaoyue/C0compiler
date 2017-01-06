@@ -1,0 +1,18 @@
+int glbA;
+int fib(int x){
+	if(x==1)
+		return (1);
+	if(x==2)
+		return (1);
+	return (fib(x-1)+fib(x-2));
+}
+void main(){
+	int x;
+	int arr[100];
+	printf("Please input a num:\n");
+	scanf(x);
+	printf("Fib(x) num is ", fib(x));
+	x=20;
+	arr[x+1]=100;
+	return;
+}
