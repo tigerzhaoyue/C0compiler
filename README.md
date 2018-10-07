@@ -1,5 +1,5 @@
 # C0compiler
-A compiler for C0 grammar
+A compiler for C Language
 
 ## pipeline
 C program -> Lexer -> Parser -> Quarter (Intermediate expression) -> DAG optimization (optional) -> MIPS instructions
