@@ -1,7 +1,0 @@
-const int a;
-int b;
-void main(){
-	int a;
-	scanf(c);
-	printf("eee",a);
-}
