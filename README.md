@@ -6,7 +6,7 @@ C program -> Lexer -> Parser -> Quarter (Intermediate expression) -> DAG optimiz
 
 
 ## An example
-### C program
+### C program (Input)
 ``` C
 const int NUMBER=2
 const char cha = '*';
@@ -344,7 +344,7 @@ WRTC  (42)
 RETM  
 ```
 
-### MIPS instructions
+### MIPS instructions (Output)
 ``` asm
 	.data
 s0:	.asciiz "\nToo large!Upper bound now is:"
