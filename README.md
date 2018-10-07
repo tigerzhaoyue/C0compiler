@@ -7,7 +7,7 @@ C program -> Lexer -> Parser -> Quarter (Intermediate expression) -> DAG optimiz
 
 ## An example
 ### C program
-```
+``` C
 const int NUMBER=2
 const char cha = '*';
 int targetvar;					
@@ -85,7 +85,7 @@ void main(){
 ```   
 
 ### Quarter (Intermediate expression)
-
+```
 LAB  Label_1
 ADD  (0),a,b
 RET  (0)
@@ -342,9 +342,10 @@ WRT  "\t"
 ADD  (42),cha,1
 WRTC  (42)
 RETM  
-
+```
 
 ### MIPS instructions
+``` asm
 	.data
 s0:	.asciiz "\nToo large!Upper bound now is:"
 s1:	.asciiz "\nToo small!Lower bound now is:"
@@ -1137,3 +1138,4 @@ li	$v0,11
 lw	$a0,200($fp)
 syscall
 #RETURN MAIN
+```
