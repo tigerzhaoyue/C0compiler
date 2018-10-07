@@ -19,7 +19,7 @@ void guess(int a,int b){
 	guessnum=(a+b)/2;
 	if(guessnum>targetvar){				
 		printf("\nToo large!Upper bound now is:",guessnum ;
-		guess a,guessnum);
+		guess (a,guessnum);
 		return;		
 	}
 	if(guessnum<targetvar){
