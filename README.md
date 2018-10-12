@@ -18,7 +18,7 @@ void guess(int a,int b){
 	int guessnum;	
 	guessnum=(a+b)/2;
 	if(guessnum>targetvar){				
-		printf("\nToo large!Upper bound now is:",guessnum ;
+		printf("\nToo large!Upper bound now is:",guessnum);
 		guess (a,guessnum);
 		return;		
 	}
