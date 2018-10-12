@@ -33,7 +33,7 @@ void guess(int a,int b){
 	}
 }
 int fib(x){
-	if x<=0){
+	if (x<=0){
 		printf("fib para error! return ERROR CODE = -1\t");
 		return (-1);
 	}
