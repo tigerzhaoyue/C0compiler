@@ -12,7 +12,7 @@ const int NUMBER=2
 const char cha = '*';
 int targetvar;					
 int ADD(int a,int b){						
-	return (+a++b);														
+	return (+a++b);	
 }
 void guess(int a,int b){	
 	int guessnum;	
@@ -53,14 +53,14 @@ void main(){
 	char cha_;				
 	i=1;							
 	if(i<NUMBER){												
-			scanf(option,x,y);						
+	    scanf(option,x,y);						
             switch(option){						
             	case 1:{targetvar=10;guess(0,20);}		
             	case 2:{targetvar=8;guess(0,20);}		
             	case 3:{targetvar=11;guess(0,20);}
             	case 4:{targetvar=16;guess(0,20);}
             	default:printf("\nWrong option!");		
-            	}         	  						
+            }         	  						
 	}
 	printf("\n",ADD(x,y));	
 	printf("\n");
@@ -71,16 +71,14 @@ void main(){
 		printf("\t",chaint);
 		printf("\t\t");
 		i=i+1;
-		}
+	}
 	printf("\nFib sum is :",fib(ADD(x,y)+1)+10);
-	printf("\nFib sum is :",fib(-ADD(x,y+x)
-	+1)
-	+1);
-	array[3*6-10 =ADD(x,y+1);
+	printf("\nFib sum is :",fib(-ADD(x,y+x)+1)+1);
+	array[3*6-10] = ADD(x,y+1);
 	array[0] = array[8]+1;
 	printf("\nArray[0]:",array[10*9*8*0]);
 	return;
-	}
+}
 
 ```   
 
